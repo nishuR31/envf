@@ -1,5 +1,5 @@
 {
-  "name": "envy",
+  "name": "envf",
   "version": "1.0.0",
   "description": "A simple easy modular isolated module type env manager to inject env keys to process.env",
   "keywords": [
@@ -8,13 +8,13 @@
     "mjs",
     "isolated"
   ],
-  "homepage": "https://github.com/nishuR31/envy#readme",
+  "homepage": "https://github.com/nishuR31/envf#readme",
   "bugs": {
-    "url": "https://github.com/nishuR31/envy/issues"
+    "url": "https://github.com/nishuR31/envf/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nishuR31/envy.git"
+    "url": "git+https://github.com/nishuR31/envf.git"
   },
   "license": "ISC",
   "author": "nishuR31",
