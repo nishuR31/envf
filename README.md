@@ -2,7 +2,7 @@
 # Envf
 
 [![npm version](https://img.shields.io/npm/v/envf?color=blue&&logo=npm)](https://www.npmjs.com/package/envf)
-[![downloads](https://img.shields.io/npm/dt/envf?color=brightgreen&)](https://www.npmjs.com/package/envf)
+[![downloads](https://img.shields.io/npm/dt/envf?color=brightgreen)](https://www.npmjs.com/package/envf)
 ![license](https://img.shields.io/npm/l/envf)
 ![typescript](https://img.shields.io/badge/Built%20With%20TypeScript-000000?&logo=typescript)
 ![Node.js](https://img.shields.io/badge/Node.js-000000?&logo=node.js)
