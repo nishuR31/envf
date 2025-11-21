@@ -143,4 +143,3 @@ let index = { load, setKey, setKeys, pathLoad, keys, getKey };
 
 export default index;
 
-console.log(index.load(".env.eg"))
