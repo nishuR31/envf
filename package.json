@@ -1,6 +1,6 @@
 {
   "name": "envy",
-  "version": "1.0.1",
+  "version": "3.0.1",
   "description": "A simple easy modular isolated module type env manager to inject env keys to process.env",
   "keywords": [
     "env",
@@ -27,7 +27,8 @@
     "dev": "npx tsx src/index.ts",
     "build": "tsc",
     "prepublishOnly": "rm -rf dist && npx tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "git":"git add . && git commit -m \"done\" && git push -f origin main"
   },
   "devDependencies": {
     "@types/node": "^24.9.2",
