@@ -57,7 +57,7 @@ export function load(file: string = ".env"): typeof env | undefined | string {
   try {
     let pathFile = envPath(file);
     if (!fs.existsSync(envPath(file))) {
-      console.warn(`No .env file found at ${pathFile}`);
+      console.warn(`No ${file} file found at ${pathFile}`);
       env = process.env as Record<string, any>;
       return env;
     }
@@ -95,7 +95,7 @@ export function setKey<T extends string>(key: T): T | undefined {
     process.env[key] = env[key]; //injection of keys in process.env
     return key;
   } catch (err) {
-    console.error(`Error `);
+    console.error(`Error : ${err} `);
   }
 }
 
@@ -119,8 +119,10 @@ export function setKeys<T extends string>(...keys: T[]): string {
 export function keys(): any[] | string {
   try {
     return Object.keys(env).length
-    ? `Keys injected : ${Object.keys(process.env).filter((key) => key in env)}`
-      : `May be env isn't loaded.`
+      ? `Keys injected : ${Object.keys(process.env).filter(
+          (key) => key in env
+        )}`
+      : `May be env isn't loaded.`;
   } catch (err) {
     console.log(`${err}`);
     return `${err}`;
@@ -137,5 +139,8 @@ export function getKey<T extends string>(key: T): string | undefined {
   return undefined;
 }
 
-export default { load, setKey, setKeys, pathLoad, keys, getKey };
+let index = { load, setKey, setKeys, pathLoad, keys, getKey };
 
+export default index;
+
+console.log(index.load(".env.eg"))

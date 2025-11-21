@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "esModuleInterop": false,
+    // "esModuleInterop": false,
     "declarationMap": true,
     "declarationDir": "./dist/types",
     "sourceMap": true,
